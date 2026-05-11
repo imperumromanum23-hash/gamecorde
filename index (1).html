@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMECORDE HUB 🎮</title>
+    <style>
+        :root { --p: #00d4ff; --bg: #0b0e14; --c: #151921; }
+        body { background: var(--bg); color: #fff; font-family: sans-serif; margin: 0; padding: 15px; text-align: center; }
+        
+        .header { margin-bottom: 20px; border-bottom: 2px solid var(--p); padding-bottom: 15px; }
+        h1 { color: var(--p); font-size: 22px; text-transform: uppercase; margin: 0; letter-spacing: 2px; }
+        
+        .section-title { font-size: 11px; color: #555; margin: 25px 0 10px; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        
+        .btn {
+            background: var(--c); border: 1px solid #2d343f;
+            padding: 15px 5px; border-radius: 12px; text-decoration: none;
+            color: #fff; font-size: 13px; font-weight: bold;
+            display: flex; flex-direction: column; align-items: center; gap: 5px;
+            border-bottom: 3px solid var(--p);
+        }
+        .btn:active { transform: scale(0.95); background: #1c222d; }
+        .icon { font-size: 18px; }
+
+        .action-btns { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+        
+        .chat-btn, .ai-btn {
+            padding: 18px; border-radius: 15px; text-decoration: none;
+            color: #fff; font-weight: bold; font-size: 15px;
+            box-shadow: 0 5px 15px rgba(0, 212, 255, 0.2); transition: 0.3s;
+            display: block; border: none;
+        }
+        
+        /* Кнопка чата теперь более заметная */
+        .chat-btn { 
+            background: linear-gradient(45deg, #ff4e50, #f9d423); 
+            color: #000;
+        }
+        .ai-btn { 
+            background: linear-gradient(45deg, #8e44ad, #9b59b6); 
+            border-bottom: 3px solid #fff;
+            animation: glow 2s infinite;
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #8e44ad; }
+            50% { box-shadow: 0 0 20px #9b59b6; }
+            100% { box-shadow: 0 0 5px #8e44ad; }
+        }
+
+        .chat-btn:active, .ai-btn:active { transform: translateY(2px); box-shadow: none; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>GAMECORDE HUB 🎮</h1>
+</div>
+
+<div class="section-title">Игровые новости</div>
+<div class="grid">
+    <a href="tg://resolve?domain=igromania" class="btn"><span class="icon">🕹️</span>ИГРОМАНИЯ</a>
+    <a href="tg://resolve?domain=stopgamenews" class="btn"><span class="icon">📺</span>STOPGAME</a>
+    <a href="https://goha.ru" target="_blank" class="btn"><span class="icon">🔥</span>GOHA.RU</a>
+    <a href="tg://resolve?domain=vgtimes" class="btn"><span class="icon">🌍</span>VGTIMES</a>
+    <a href="https://dtf.ru" target="_blank" class="btn"><span class="icon">📝</span>DTF</a>
+    <a href="tg://resolve?domain=playground_ru" class="btn"><span class="icon">🎮</span>PLAYGROUND</a>
+    <a href="https://youtube.com" target="_blank" class="btn"><span class="icon">🍎</span>ITPEDIA</a>
+    <a href="tg://resolve?domain=cybersportru" class="btn"><span class="icon">🏆</span>CYBERSPORT</a>
+</div>
+
+<div class="section-title">Инструменты и связь</div>
+<div class="action-btns">
+    <a href="https://duckduckgo.com" target="_blank" class="ai-btn">🤖 ЗАПУСТИТЬ РЕЖИМ ИИ</a>
+    
+    <!-- НОВЫЙ РАБОЧИЙ ЧАТ -->
+    <a href="https://deadsimplechat.com" target="_blank" class="chat-btn">💬 ВОЙТИ В ОБЩИЙ ЧАТ</a>
+</div>
+
+<p style="margin-top: 30px; font-size: 10px; color: #333;">
+    Version 5.2 | Chat Fix & New Design
+</p>
+
+</body>
+</html>
